@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications"
+title: ""
 permalink: /publications/
 author_profile: true
 ---
@@ -12,7 +12,9 @@ author_profile: true
 
 {% for year_group in publications_by_year %}
 <div class="year-section">
-  <div class="year-title">{{ year_group.name }}</div>
+  <!-- <div class="year-title">{{ year_group.name }}</div> -->
+
+  <div class="pub-category">{{ year_group.name }}</div>
   
   {% assign sorted_pubs = year_group.items | sort: "date" | reverse %}
   {% for post in sorted_pubs %}
