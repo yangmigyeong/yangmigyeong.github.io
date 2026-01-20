@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
+<!-- {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
@@ -30,6 +30,49 @@ author_profile: true
   {% for post in site.publications reversed %}
     {% include archive-single.html %}
   {% endfor %}
-{% endif %}
+{% endif %} -->
 
 
+<link rel="stylesheet" href="/assets/css/publications.css">
+
+{% assign publications_by_year = site.publications | group_by: "year" | sort: "name" | reverse %}
+
+{% for year_group in publications_by_year %}
+<div class="year-section">
+  <div class="year-title">{{ year_group.name }}</div>
+  
+  <div class="pub-category">Peer-reviewed Conferences and Journals</div>
+  
+  {% assign sorted_pubs = year_group.items | sort: "date" | reverse %}
+  {% for post in sorted_pubs %}
+  <div class="pub-item">
+    <div class="pub-title">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">{{ post.title }}</a>
+      {% else %}
+        {{ post.title }}
+      {% endif %}
+    </div>
+    
+    {% if post.authors %}
+    <div class="pub-authors">{{ post.authors }}</div>
+    {% endif %}
+    
+    <div class="pub-venue">{{ post.venue }}{% if post.note %} ({{ post.note }}){% endif %}</div>
+    
+    <div class="pub-links">
+      {% if post.doi %}<a href="{{ post.doi }}" class="doi">DOI</a>{% endif %}
+      {% if post.paperurl %}<a href="/files/{{ post.paperurl }}" class="pdf">PDF</a>{% endif %}
+      {% if post.bibtex %}<a href="{{ post.bibtex }}" class="bibtex">BibTeX</a>{% endif %}
+      {% if post.website %}<a href="{{ post.website }}" class="web">Web</a>{% endif %}
+      {% if post.demo %}<a href="{{ post.demo }}" class="demo">Demo video</a>{% endif %}
+      {% if post.arxiv %}<a href="{{ post.arxiv }}" class="arxiv">arXiv</a>{% endif %}
+      {% if post.github %}<a href="{{ post.github }}" class="github">GitHub</a>{% endif %}
+      {% if post.code %}<a href="{{ post.code }}" class="code">Code</a>{% endif %}
+      {% if post.slides %}<a href="{{ post.slides }}" class="slides">Slides</a>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  
+</div>
+{% endfor %}
