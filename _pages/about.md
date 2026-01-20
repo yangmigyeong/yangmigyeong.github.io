@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-I am a Research Scientist at NAVER AI Lab in Human-Computer Interaction (HCI) Research Group at NAVER Cloud.
+I am a Research Scientist in Human-Computer Interaction (HCI) Research Group at at NAVER AI Lab, NAVER Cloud.
 I work on applied artificial intelligence and human-centered AI.
 My research focuses on developing AI systems that are socially responsible, interpretable, and practically useful in real-world applications.
 
@@ -24,6 +24,7 @@ Education
 
 Experience
 ------
+- [2026.01 - ing] Research Scientist - Human-Computer Interaction (HCI) Research Group at NAVER AI Lab 
 - [2025.09 - 2025.12] Postdoctoral Fellow - Center for Multimedia Intelligence at Sungkyunkwan University 
 - [2025.03 - 2025.09] Intern - Human-Computer Interaction (HCI) Research Group at NAVER AI Lab 
 - [2023.09 - 2025.02] Lab Leader - Data Science & Artificial Intelligence Laboratory, Sungkyunkwan University 
@@ -32,11 +33,11 @@ Experience
 - [2018.05 - 2019.06] Undergraduate Research Program Intern - Data Science Laboratory, Hanyang University 
 
 
-### Highlights
-- Publications at top-tier venues (e.g., CSCW)
-- Industry research experience at NAVER
-- Interdisciplinary background in AI and HCI
 
-[Publications](/publications/) · [CV](/files/CV.pdf) · [Contact](migyeong.yang@navercorp.com)
+Research
+======
 
+Interest
+------
+Human-Computer Interaction, Human-centered AI, Mental Health, Healthcare, Medical/Therapeutic Computing
 
