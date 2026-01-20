@@ -43,25 +43,3 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
-
-.publications-list {
-  list-style: none;
-  padding-left: 0;
-
-  li {
-    margin-bottom: 0.5em;
-    line-height: 1.5;
-  }
-
-  em {
-    color: #555;
-  }
-
-  a {
-    color: #1a73e8;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
