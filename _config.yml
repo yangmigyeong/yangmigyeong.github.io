@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Migyeong Yang"
+title                    : "Migyeong Yang, PhD"
 title_separator          : "-"
 name                     : &name "Migyeong Yang"
 description              : &description "Ph.D"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -56,7 +56,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
