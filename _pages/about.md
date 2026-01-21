@@ -83,7 +83,7 @@ redirect_from:
   padding: 12px 0;
   vertical-align: top;
   border: none;
-  font-size: 1.5em;
+  font-size: 1.1em;
   line-height: 1.75;
   background: transparent;
 }
@@ -134,15 +134,15 @@ redirect_from:
   <table class="news-table">
     <tr>
       <td>Jan 2026</td>
-      <td>Started a new position as Research Scientist at NAVER AI Lab!</td>
+      <td>Started a new position as Research Scientist at NAVER AI Lab! 🎉</td>
     </tr>
     <tr>
-      <td>Aug 2025</td>
-      <td>Successfully defended my PhD dissertation! 🎓</td>
+      <td>Jan 2026</td>
+      <td>My first CHI paper, "Autiverse: Eliciting Autistic Adolescents' Daily Narratives through AI-guided Multimodal Journaling," has been conditionally accepted to ACM CHI 2026! 🎊</td>
     </tr>
     <tr>
-      <td>Mar 2025</td>
-      <td>Started as an Intern at NAVER AI Lab HCI Research Group.</td>
+      <td>Nov 2025</td>
+      <td>Honored to present our paper "CheckDAPR: An MLLM-based Sketch Analysis System for Draw-A-Person-in-the-Rain Assessments" at ACM CIKM 2025 at COEX, Seoul! 🎤</td>
     </tr>
   </table>
   
