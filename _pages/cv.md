@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 ---
@@ -14,6 +14,5 @@ author_profile: true
 }
 </style>
 
-Please click the 'PDF' icon to download the CV 👉
 
 <iframe class="cv-embed" src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://yangmigyeong.github.io/files/CV.pdf#pagemode=none" frameborder="0"></iframe>
