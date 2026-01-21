@@ -83,7 +83,8 @@ redirect_from:
   padding: 12px 0;
   vertical-align: top;
   border: none;
-  font-size: 0.95em;
+  font-size: 1em;
+  border-bottom: none;
 }
 
 .news-table td:first-child {
