@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Me!"
+title: ""
 author_profile: false
 redirect_from: 
   - /about/
@@ -50,6 +50,14 @@ redirect_from:
 
 .home-intro a:hover {
   text-decoration: underline;
+}
+
+.about-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  color: #494e52;
 }
 
 /* 아래 1컬럼 영역 */
@@ -109,11 +117,12 @@ redirect_from:
   </div>
   
   <div class="home-intro">
-    <p>I am a Research Scientist in Human-Computer Interaction (HCI) Research Group at NAVER AI Lab, NAVER Cloud. I work on applied artificial intelligence and human-centered AI. My research focuses on developing AI systems that are socially responsible, interpretable, and practically useful in real-world applications.</p>
+    <h2 class="about-title">About Me!</h2>
+    <p>Hello:) I am Migyeong Yang, and I go by Miggy. I received my Ph.D. in Applied Artificial Intelligence from Sungkyunkwan University (SKKU) in Seoul, Republic of Korea. Currently, I am a <b>Research Scientist</b> in the <b>Human-Computer Interaction (HCI) Research Group at NAVER AI Lab, NAVER Cloud</b>.
     
-    <p>My research interests mainly revolve around HCI, Human-centered AI, and Affective Computing. I am excited about developing accessible AI healthcare systems to address tangible real-world challenges. I am enthusiastic for collaborating with experts across diverse domains. Feel free to reach out with collaboration proposals or for discussions anytime.</p>
+    <p> My research interests mainly revolve around HCI, Human-centered AI, and Affective Computing. I am excited about developing accessible AI-infused systems to address tangible, real-world challenges, especially in mental health and healthcare. I am enthusiastic about collaborating with experts across diverse domains. Feel free to reach out with collaboration proposals or for discussions anytime.</p>
     
-    <p>For more details about me, please check my <a href="/cv/">CV</a>. ✨</p>
+    <p>For more details about me, please check my <a href="/cv/">CV</a>.</p>
   </div>
 </div>
 
