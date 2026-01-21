@@ -3,62 +3,44 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+<style>
+.cv-container {
+  width: 100%;
+  margin-top: 20px;
+}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+.cv-embed {
+  width: 100%;
+  height: 800px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+.cv-download {
+  margin-bottom: 15px;
+}
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+.cv-download a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #337ab7;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+.cv-download a:hover {
+  background-color: #286090;
+}
+</style>
+
+<div class="cv-container">
+  <div class="cv-download">
+    <a href="/files/cv.pdf" download>📥 Download CV</a>
+  </div>
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  <iframe class="cv-embed" src="/files/cv.pdf" frameborder="0"></iframe>
+</div>
