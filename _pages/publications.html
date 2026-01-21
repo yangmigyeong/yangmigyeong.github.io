@@ -5,7 +5,6 @@ permalink: /publications/
 author_profile: true
 ---
 
-
 <link rel="stylesheet" href="/assets/css/publications.css">
 
 {% assign publications_by_year = site.publications | group_by: "year" | sort: "name" | reverse %}
@@ -37,6 +36,7 @@ author_profile: true
       {% if post.doi %}<a href="{{ post.doi }}" class="doi">DOI</a>{% endif %}
       {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf">PDF</a>{% endif %}
       {% if post.bibtex %}<a href="{{ post.bibtex }}" class="bibtex">BibTeX</a>{% endif %}
+      {% if post.html %}<a href="{{ post.html }}" class="html">HTML</a>{% endif %}
       {% if post.website %}<a href="{{ post.website }}" class="web">Web</a>{% endif %}
       {% if post.demo %}<a href="{{ post.demo }}" class="demo">Demo video</a>{% endif %}
       {% if post.arxiv %}<a href="{{ post.arxiv }}" class="arxiv">arXiv</a>{% endif %}
