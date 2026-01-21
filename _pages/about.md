@@ -76,7 +76,7 @@ redirect_from:
 
 .news-table {
   width: 100%;
-  border-collapse: collapse;
+  border: none;
 }
 
 .news-table td {
@@ -84,7 +84,8 @@ redirect_from:
   vertical-align: top;
   border: none;
   font-size: 1em;
-  border-bottom: none;
+  line-height: 1.75;
+  background: transparent;
 }
 
 .news-table td:first-child {
@@ -119,7 +120,7 @@ redirect_from:
   
   <div class="home-intro">
     <h2 class="about-title">About Me!</h2>
-    <p>Hello:) I am Migyeong Yang, and I go by Miggy. I received my Ph.D. in Applied Artificial Intelligence from Sungkyunkwan University (SKKU) in Seoul, Republic of Korea. Currently, I am a <b>Research Scientist</b> in the <b>Human-Computer Interaction (HCI) Research Group at NAVER AI Lab, NAVER Cloud</b>.
+    <p>Hello:) I am Migyeong Yang, and I go by Miggy. I received my Ph.D. in Applied Artificial Intelligence from Sungkyunkwan University (SKKU) in Seoul, Republic of Korea. Currently, I am a <b>Research Scientist</b> in the <b>Human-Computer Interaction (HCI) Research Group at NAVER AI Lab, NAVER Cloud</b>.</p>
     
     <p> My research interests mainly revolve around HCI, Human-centered AI, and Affective Computing. I am excited about developing accessible AI-infused systems to address tangible, real-world challenges, especially in mental health and healthcare. I am enthusiastic about collaborating with experts across diverse domains. Feel free to reach out with collaboration proposals or for discussions anytime.</p>
     
