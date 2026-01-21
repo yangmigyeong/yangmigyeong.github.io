@@ -42,5 +42,7 @@ author_profile: true
     <a href="/files/cv.pdf" download>📥 Download CV</a>
   </div>
   
-  <iframe class="cv-embed" src="/files/cv.pdf" frameborder="0"></iframe>
+  <object class="cv-embed" data="/files/cv.pdf" type="application/pdf">
+    <p>PDF를 표시할 수 없습니다. <a href="/files/cv.pdf">여기서 다운로드</a>하세요.</p>
+  </object>
 </div>
