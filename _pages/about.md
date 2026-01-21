@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "About Me!"
 author_profile: false
 redirect_from: 
   - /about/
@@ -19,12 +19,17 @@ redirect_from:
 
 .home-sidebar {
   flex-shrink: 0;
-  width: 250px;
+  width: 260px;
 }
 
 .home-sidebar .author__avatar img {
   max-width: 200px;
   border-radius: 50%;
+}
+
+.home-sidebar .author__urls li {
+  font-size: 0.75em;
+  white-space: normal;
 }
 
 .home-intro {
@@ -90,9 +95,11 @@ redirect_from:
   }
   
   .home-sidebar {
-    width: 90%;
+    width: 100%;
   }
 }
+
+
 </style>
 
 <!-- 상단: 2컬럼 (프로필 | 소개글) -->
