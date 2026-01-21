@@ -14,4 +14,4 @@ author_profile: true
 }
 </style>
 
-<iframe class="cv-embed" src="https://docs.google.com/viewer?url=https://yangmigyeong.github.io/files/cv.pdf&embedded=true" frameborder="0"></iframe>
+<iframe class="cv-embed" src="https://docs.google.com/viewer?url=https://yangmigyeong.github.io/files/CV.pdf&embedded=true" frameborder="0"></iframe>
