@@ -71,7 +71,7 @@
 }
 
 .pub-links .doi {
-  background-color: #5cb85c;
+  background-color: #5bc0de;
   color: white;
 }
 
@@ -85,8 +85,13 @@
   color: white;
 }
 
-.pub-links .web {
+.pub-links .html {
   background-color: #5bc0de;
+  color: white;
+}
+
+.pub-links .web {
+  background-color: #e67e22;
   color: white;
 }
 
@@ -101,7 +106,7 @@
 }
 
 .pub-links .github {
-  background-color: #d4a259;
+  background-color: #5cb85c;
   color: white;
 }
 
