@@ -43,3 +43,20 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+
+.greedy-nav .visible-links {
+  padding-left: 300px;
+}
+
+@media (max-width: 1024px) {
+  .greedy-nav .visible-links {
+    padding-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .greedy-nav .visible-links {
+    padding-left: 0;
+  }
+}
