@@ -46,11 +46,5 @@
 
 
 .greedy-nav .visible-links {
-  padding-left: 150px;
-}
-
-@media (max-width: 1024px) {
-  .greedy-nav .visible-links {
-    padding-left: 150px;
-  }
+  margin-left: auto;
 }
