@@ -19,7 +19,7 @@ redirect_from:
 
 .home-sidebar {
   flex-shrink: 0;
-  width: 260px;
+  width: 250px;
 }
 
 .home-sidebar .author__avatar img {
@@ -90,7 +90,7 @@ redirect_from:
   }
   
   .home-sidebar {
-    width: 100%;
+    width: 90%;
   }
 }
 </style>
