@@ -34,13 +34,13 @@ author_profile: true
     
     <div class="pub-links">
       {% if post.doi %}<a href="{{ post.doi }}" class="doi">DOI</a>{% endif %}
+      {% if post.html %}<a href="{{ post.html }}" class="html">HTML</a>{% endif %}
       {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf">PDF</a>{% endif %}
       {% if post.bibtex %}<a href="{{ post.bibtex }}" class="bibtex">BibTeX</a>{% endif %}
-      {% if post.html %}<a href="{{ post.html }}" class="html">HTML</a>{% endif %}
+      {% if post.github %}<a href="{{ post.github }}" class="github">GitHub</a>{% endif %}
       {% if post.website %}<a href="{{ post.website }}" class="web">Web</a>{% endif %}
       {% if post.demo %}<a href="{{ post.demo }}" class="demo">Demo video</a>{% endif %}
       {% if post.arxiv %}<a href="{{ post.arxiv }}" class="arxiv">arXiv</a>{% endif %}
-      {% if post.github %}<a href="{{ post.github }}" class="github">GitHub</a>{% endif %}
       {% if post.code %}<a href="{{ post.code }}" class="code">Code</a>{% endif %}
       {% if post.slides %}<a href="{{ post.slides }}" class="slides">Slides</a>{% endif %}
     </div>
