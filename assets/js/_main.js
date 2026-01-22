@@ -45,12 +45,25 @@ if (plotlyElements.length > 0) {
    Actions that should occur when the page has been fully loaded
    ========================================================================== */
 
+// Force light theme immediately on page load (before DOM ready)
+(function() {
+  // Remove any dark theme from localStorage
+  if (localStorage.getItem("theme") === "dark") {
+    localStorage.removeItem("theme");
+  }
+  // Remove data-theme attribute immediately
+  if (document.documentElement.hasAttribute("data-theme")) {
+    document.documentElement.removeAttribute("data-theme");
+  }
+})();
+
 $(document).ready(function () {
   // SCSS SETTINGS - These should be the same as the settings in the relevant files 
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
   const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
 
-  // Always use light theme - remove any dark theme attributes
+  // Always use light theme - remove any dark theme attributes and localStorage
+  localStorage.removeItem("theme");
   $("html").removeAttr("data-theme");
 
   // Enable the sticky footer
