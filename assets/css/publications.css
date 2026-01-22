@@ -54,11 +54,11 @@ html[data-theme="dark"] .pub-category {
 }
 
 html[data-theme="dark"] .pub-title {
-  color: var(--global-link-color, #0ea1c5) !important;
+  color: var(--global-link-color, #ff6b47) !important;
 }
 
 html[data-theme="dark"] .pub-title a {
-  color: var(--global-link-color, #0ea1c5) !important;
+  color: var(--global-link-color, #ff6b47) !important;
 }
 
 .pub-authors {
