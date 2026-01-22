@@ -17,23 +17,17 @@ redirect_from:
   
   <div class="home-intro">
     <h2 class="about-title">About Me!</h2>
-    <p>Hello:) I am Migyeong Yang, and I go by Miggy.</p>
-
-    <p>I received my Ph.D. in Applied Artificial Intelligence from Sungkyunkwan University (SKKU) in Seoul, Republic of Korea.
-    Currently, I am a <b>Research Scientist</b> in the <b>Human-Computer Interaction (HCI) Research Group at NAVER AI Lab, NAVER Cloud</b>.</p>
+    <p>Hello:) I am Migyeong Yang, and I go by Miggy. I received my Ph.D. in Applied Artificial Intelligence from Sungkyunkwan University (SKKU) in Seoul, Republic of Korea. Currently, I am a <b>Research Scientist</b> in the <b>Human-Computer Interaction (HCI) Research Group at NAVER AI Lab, NAVER Cloud</b>.</p>
     
-    <p> My research interests mainly lie in HCI, Human-centered AI, and Affective Computing. I am excited about developing accessible <b>AI-infused systems to address real-world challenges, especially in mental health and healthcare</b>.</p>
+    <p> My research interests mainly lie on HCI, Human-centered AI, and Affective Computing. I am excited about developing accessible <b>AI-infused systems to address real-world challenges, especially in mental health and healthcare</b>.</p>
     
-    <p>For more details about me, please check my <a href="/cv/">CV</a>. Thanks for stopping by!</p>
+    <p>For more details about me, please check my <a href="/cv/">CV</a>.</p>
   </div>
 </div>
 
 <!-- 하단: 1컬럼 (News, Publications) -->
 <div class="home-bottom">
-  <div class="section-title-wrapper">
-    <h2 class="section-title">News</h2>
-    <p class="news-updated">Last updated: January 2026</p>
-  </div>
+  <h2 class="section-title">News</h2>
   <table class="news-table">
     <tr>
       <td>Jan 2026</td>

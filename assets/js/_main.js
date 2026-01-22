@@ -22,24 +22,13 @@ let determineComputedTheme = () => {
 // detect OS/browser preference
 const browserPref = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
-// Check if device is mobile (typically 768px or less)
-const isMobile = () => {
-  return window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-};
-
 // Set the theme on page load or when explicitly called
 let setTheme = (theme) => {
-  // On mobile, default to light mode if no theme is explicitly set
-  let defaultTheme = browserPref;
-  if (isMobile() && !localStorage.getItem("theme") && !theme && !$("html").attr("data-theme")) {
-    defaultTheme = 'light';
-  }
-  
   const use_theme =
     theme ||
     localStorage.getItem("theme") ||
     $("html").attr("data-theme") ||
-    defaultTheme;
+    browserPref;
 
   if (use_theme === "dark") {
     $("html").attr("data-theme", "dark");
@@ -101,26 +90,14 @@ $(document).ready(function () {
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
   const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
 
-  // If the user hasn't chosen a theme, follow the OS preference (or force light on mobile)
+  // If the user hasn't chosen a theme, follow the OS preference
   setTheme();
   window.matchMedia('(prefers-color-scheme: dark)')
         .addEventListener("change", (e) => {
           if (!localStorage.getItem("theme")) {
-            // Force light mode on mobile, otherwise follow system preference
-            if (isMobile()) {
-              setTheme("light");
-            } else {
-              setTheme(e.matches ? "dark" : "light");
-            }
+            setTheme(e.matches ? "dark" : "light");
           }
         });
-  
-  // Handle window resize to maintain light mode on mobile
-  $(window).on('resize', function() {
-    if (isMobile() && !localStorage.getItem("theme")) {
-      setTheme("light");
-    }
-  });
 
   // Enable the theme toggle
   $('#theme-toggle').on('click', toggleTheme);

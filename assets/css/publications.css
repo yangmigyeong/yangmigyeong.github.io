@@ -7,19 +7,29 @@
 .year-title {
   font-size: 1.8em;
   font-weight: bold;
-  color: var(--global-text-color, #333);
-  border-bottom: 2px solid var(--global-text-color, #333);
+  color: #333;
+  border-bottom: 2px solid #333;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
+html[data-theme="dark"] .year-title {
+  color: var(--global-text-color, #ffffff);
+  border-bottom-color: var(--global-border-color, #7a8288);
+}
+
 .pub-category {
-  background-color: var(--global-code-background-color, #f5f5f5);
+  background-color: #f5f5f5;
   padding: 10px 15px;
   margin-bottom: 20px;
   font-size: 1.1em;
   font-weight: 500;
-  color: var(--global-text-color, #444);
+  color: #444;
+}
+
+html[data-theme="dark"] .pub-category {
+  background-color: var(--global-dark-border-color, #5a5a5a);
+  color: var(--global-text-color, #ffffff);
 }
 
 .pub-item {
@@ -30,12 +40,12 @@
 .pub-title {
   font-size: 1.05em;
   font-weight: 600;
-  color: var(--global-link-color, #c45500);
+  color: #c45500;
   margin-bottom: 5px;
 }
 
 .pub-title a {
-  color: var(--global-link-color, #c45500);
+  color: #c45500;
   text-decoration: none;
 }
 
@@ -43,16 +53,32 @@
   text-decoration: underline;
 }
 
+html[data-theme="dark"] .pub-title {
+  color: var(--global-link-color, #0ea1c5);
+}
+
+html[data-theme="dark"] .pub-title a {
+  color: var(--global-link-color, #0ea1c5);
+}
+
 .pub-authors {
   font-size: 0.95em;
-  color: var(--global-text-color-light, #555);
+  color: #555;
   margin-bottom: 5px;
 }
 
 .pub-venue {
   font-size: 0.95em;
-  color: var(--global-text-color-light, #666);
+  color: #666;
   margin-bottom: 8px;
+}
+
+html[data-theme="dark"] .pub-authors {
+  color: var(--global-text-color-light, #d9d9d9);
+}
+
+html[data-theme="dark"] .pub-venue {
+  color: var(--global-text-color-light, #d9d9d9);
 }
 
 .pub-links {
