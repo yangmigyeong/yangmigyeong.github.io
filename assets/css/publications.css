@@ -24,12 +24,12 @@ html[data-theme="dark"] .year-title {
   margin-bottom: 20px;
   font-size: 1.1em;
   font-weight: 500;
-  color: #444;
+  color: #444 !important;
 }
 
 html[data-theme="dark"] .pub-category {
-  background-color: var(--global-dark-border-color, #5a5a5a);
-  color: var(--global-text-color, #ffffff);
+  background-color: var(--global-dark-border-color, #5a5a5a) !important;
+  color: var(--global-text-color, #ffffff) !important;
 }
 
 .pub-item {
@@ -40,12 +40,12 @@ html[data-theme="dark"] .pub-category {
 .pub-title {
   font-size: 1.05em;
   font-weight: 600;
-  color: #c45500;
+  color: #c45500 !important;
   margin-bottom: 5px;
 }
 
 .pub-title a {
-  color: #c45500;
+  color: #c45500 !important;
   text-decoration: none;
 }
 
@@ -54,31 +54,31 @@ html[data-theme="dark"] .pub-category {
 }
 
 html[data-theme="dark"] .pub-title {
-  color: var(--global-link-color, #0ea1c5);
+  color: var(--global-link-color, #0ea1c5) !important;
 }
 
 html[data-theme="dark"] .pub-title a {
-  color: var(--global-link-color, #0ea1c5);
+  color: var(--global-link-color, #0ea1c5) !important;
 }
 
 .pub-authors {
   font-size: 0.95em;
-  color: #555;
+  color: #555 !important;
   margin-bottom: 5px;
 }
 
 .pub-venue {
   font-size: 0.95em;
-  color: #666;
+  color: #666 !important;
   margin-bottom: 8px;
 }
 
 html[data-theme="dark"] .pub-authors {
-  color: var(--global-text-color-light, #d9d9d9);
+  color: var(--global-text-color-light, #d9d9d9) !important;
 }
 
 html[data-theme="dark"] .pub-venue {
-  color: var(--global-text-color-light, #d9d9d9);
+  color: var(--global-text-color-light, #d9d9d9) !important;
 }
 
 .pub-links {
