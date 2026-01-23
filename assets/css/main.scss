@@ -48,3 +48,98 @@
 .greedy-nav .visible-links {
   margin-left: auto;
 }
+
+
+/* Light mode에서 Follow 버튼 색상 수정 */
+.author__urls-wrapper .btn--inverse {
+  color: #000 !important;
+  border-color: #000 !important;
+  background-color: transparent !important;
+  
+  &:hover {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+  }
+}
+
+/* Dark mode에서는 원래대로 */
+@media (prefers-color-scheme: dark) {
+  .author__urls-wrapper .btn--inverse {
+    color: #fff !important;
+    border-color: #fff !important;
+    
+    &:hover {
+      color: #000 !important;
+      background-color: #fff !important;
+      border-color: #fff !important;
+    }
+  }
+}
+
+/* 사이트 테마 토글을 사용하는 경우 */
+[data-theme="dark"] .author__urls-wrapper .btn--inverse {
+  color: #fff !important;
+  border-color: #fff !important;
+  
+  &:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+  }
+}
+
+/* 모바일에서 Author Profile 정렬 개선 */
+@media (max-width: 768px) {
+  .author__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    
+    img {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+  }
+  
+  .author__content {
+    text-align: center;
+    margin-bottom: 1em;
+    
+    .author__name {
+      margin-bottom: 0.25em;
+      font-size: 1.2em;
+    }
+    
+    .author__bio {
+      margin-bottom: 0.5em;
+      font-size: 0.9em;
+    }
+  }
+  
+  .author__urls-wrapper {
+    text-align: center;
+    
+    .btn--inverse {
+      margin-bottom: 1em;
+      width: auto;
+      padding: 0.5em 1.5em;
+    }
+  }
+}
+
+/* 초소형 모바일 화면 */
+@media (max-width: 480px) {
+  .author__avatar img {
+    max-width: 80px;
+  }
+  
+  .author__content .author__name {
+    font-size: 1.1em;
+  }
+  
+  .author__content .author__bio {
+    font-size: 0.85em;
+  }
+}
