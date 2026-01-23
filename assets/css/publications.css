@@ -28,7 +28,7 @@ html[data-theme="dark"] .year-title {
 }
 
 html[data-theme="dark"] .pub-category {
-  background-color: var(--global-bg-color, #474747) !important;
+  background-color: var(--global-bg-color, #949494) !important;
   color: var(--global-text-color, #ffffff) !important;
 }
 
