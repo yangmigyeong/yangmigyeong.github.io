@@ -8,7 +8,7 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
-ㄴㄴ
+
 
 @import
     "vendor/breakpoint/breakpoint",
@@ -47,67 +47,4 @@
 
 .greedy-nav .visible-links {
   margin-left: auto;
-}
-
-/* 모바일에서도 모든 네비게이션 항목 표시 (햄버거 메뉴 완전 제거) */
-.greedy-nav {
-  .visible-links {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    justify-content: flex-end !important;
-    
-    li {
-      display: inline-block !important;
-      margin: 0 0.5rem !important;
-      flex-shrink: 0 !important;
-    }
-  }
-  
-  /* 숨겨진 링크 컨테이너 완전 제거 */
-  .hidden-links {
-    display: none !important;
-  }
-  
-  /* 햄버거 메뉴 버튼 완전 제거 */
-  button.greedy-nav__toggle {
-    display: none !important;
-  }
-}
-
-/* 모바일 최적화 */
-@media (max-width: 768px) {
-  .greedy-nav {
-    .visible-links {
-      justify-content: center !important;
-      
-      li {
-        margin: 0 0.3rem !important;
-        
-        a {
-          font-size: 0.875em !important;
-          padding: 0.5rem 0.4rem !important;
-        }
-      }
-    }
-  }
-  
-  .masthead__inner-wrap {
-    padding: 0.5em 1em !important;
-  }
-}
-
-/* 초소형 화면 */
-@media (max-width: 480px) {
-  .greedy-nav {
-    .visible-links {
-      li {
-        margin: 0 0.2rem !important;
-        
-        a {
-          font-size: 0.75em !important;
-          padding: 0.4rem 0.3rem !important;
-        }
-      }
-    }
-  }
 }
