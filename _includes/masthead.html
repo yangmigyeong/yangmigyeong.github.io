@@ -40,13 +40,7 @@
           <li class="masthead__menu-item masthead__menu-item--lg persist {% if page.url == '/' or page.url == '/index.html' %}selected{% endif %}">
             <a href="{{ base_path }}/">{{ site.title }}</a>
           </li>
-          <!-- 테마 토글도 항상 표시 -->
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
-        </ul>
-        <ul class="hidden-links hidden">
-          <!-- Publications와 CV는 햄버거 메뉴에 -->
+          <!-- Publications와 CV도 visible-links에 추가 (greedy-nav가 자동으로 처리) -->
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -57,7 +51,12 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
+          <!-- 테마 토글은 항상 표시 -->
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
         </ul>
+        <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
   </div>
