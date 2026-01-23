@@ -89,57 +89,42 @@
   }
 }
 
-/* 모바일에서 Author Profile 정렬 개선 */
+
+/* 햄버거 메뉴 완전히 제거 - 모든 메뉴 항상 표시 */
+.greedy-nav {
+  button {
+    display: none !important;
+  }
+  
+  .visible-links {
+    display: flex !important;
+    
+    li {
+      display: inline-block !important;
+    }
+  }
+  
+  .hidden-links {
+    display: none !important;
+  }
+}
+
+/* 모바일에서도 모든 메뉴 표시 */
 @media (max-width: 768px) {
-  .author__avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
+  .greedy-nav .visible-links {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
     
-    img {
-      max-width: 100px;
-      border-radius: 50%;
-    }
-  }
-  
-  .author__content {
-    text-align: center;
-    margin-bottom: 1em;
-    
-    .author__name {
-      margin-bottom: 0.25em;
-      font-size: 1.2em;
-    }
-    
-    .author__bio {
-      margin-bottom: 0.5em;
-      font-size: 0.9em;
-    }
-  }
-  
-  .author__urls-wrapper {
-    text-align: center;
-    
-    .btn--inverse {
-      margin-bottom: 1em;
-      width: auto;
-      padding: 0.5em 1.5em;
+    li a {
+      font-size: 0.875em;
+      padding: 0.5rem 0.4rem;
     }
   }
 }
 
-/* 초소형 모바일 화면 */
 @media (max-width: 480px) {
-  .author__avatar img {
-    max-width: 80px;
-  }
-  
-  .author__content .author__name {
-    font-size: 1.1em;
-  }
-  
-  .author__content .author__bio {
-    font-size: 0.85em;
+  .greedy-nav .visible-links li a {
+    font-size: 0.75em;
+    padding: 0.4rem 0.3rem;
   }
 }
