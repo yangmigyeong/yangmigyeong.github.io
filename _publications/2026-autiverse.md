@@ -8,5 +8,5 @@ venue: 'ACM CHI 2026'
 note: 'cond. accept, full paper'
 authors: '<strong>Migyeong Yang</strong>, Kyungah Lee, Jinyoung Han, SoHyun Park, and Young-Ho Kim'
 arxiv: 'https://arxiv.org/abs/2509.17466'
-demo: 'https://youtube.com/watch?v=Tpp-rBmAyf0&feature=youtu.be'
+demo: 'https://youtube.com/watch?v=4kGJON8Yyxg&feature=youtu.be'
 ---
