@@ -5,7 +5,7 @@ permalink: /publication/2026-betadapr
 date: 2026-10-10
 year: 2026
 venue: 'PACM HCI (CSCW 2026)'
-note: 'full paper'
+note: 'accept, full paper'
 authors: '<strong>Migyeong Yang</strong>, Chaehee Park, Hyunseon Won, Taeeun Kim, Hayeon Song, and Jinyoung Han'
 paperurl: '/files/paper/betadapr.pdf'
 ---

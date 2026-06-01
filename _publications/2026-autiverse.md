@@ -5,7 +5,7 @@ permalink: /publication/2026-autiverse
 date: 2026-04-13
 year: 2026
 venue: 'ACM CHI 2026'
-note: 'accept, full paper'
+note: 'full paper'
 authors: '<strong>Migyeong Yang</strong>, Kyungah Lee, Jinyoung Han, SoHyun Park, and Young-Ho Kim'
 doi: 'https://dl.acm.org/doi/10.1145/3772318.3791381'
 arxiv: 'https://arxiv.org/abs/2509.17466'
