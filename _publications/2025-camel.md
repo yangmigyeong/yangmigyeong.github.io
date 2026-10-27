@@ -10,4 +10,8 @@ authors: 'Juho Jung*, <strong>Migyeong Yang</strong>*, Hyunseon Won, Jiwon Kim, 
 doi: 'https://doi.org/10.1109/WACV61041.2025.00867'
 paperurl: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10943198'
 github: 'https://github.com/DSAIL-SKKU/CAMEL'
+presented: 'Tucson, Arizona'
+presentation: 'poster'
+thumbnail: '/images/pubs/thumb/camel.jpg'
+thumbnail_position: 'top right'
 ---

@@ -8,43 +8,75 @@ redirect_from:
 ---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/about.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/publications.css">
 
-<!-- 상단: 2컬럼 (프로필 | 소개글) -->
-<div class="home-top">
-  <div class="home-sidebar">
-    {% include author-profile.html %}
-  </div>
-  
-  <div class="home-intro">
-    <h2 class="about-title">About Me!</h2>
-    <p>Hello:) I am Migyeong Yang, and I go by Miggy.</p>
-    
-    <p>I received my Ph.D. in Applied Artificial Intelligence from Sungkyunkwan University (SKKU) in Seoul, Republic of Korea. Currently, I am a <b>Research Scientist</b> in the <b>Human-Computer Interaction (HCI) Research Group at NAVER AI Lab, NAVER Corporation</b>.</p>
-    
-    <p> My research interests mainly lie in HCI, Human-centered AI, and Affective Computing. I am excited about developing accessible <b>AI-infused systems to address real-world challenges, especially in mental health and healthcare</b>.</p>
-    
-    <p>For more details about me, please check my <a href="/cv/">CV</a>. Thanks for stopping by!</p>
+<!-- 상단: hero (사진 | 이름, 링크, Short bio) -->
+<div class="home-hero">
+  <img class="hero-photo" src="{{ site.baseurl }}/images/{{ site.author.avatar }}" alt="Photo of {{ site.author.name }}">
+
+  <div class="hero-main">
+    <h1 class="hero-name">{{ site.author.name }}, PhD</h1>
+    <p class="hero-role">Research Scientist at NAVER AI Lab · HCI Researcher</p>
+
+    {% include profile-links.html %}
+
+    <h2 class="hero-subtitle">Short bio</h2>
+    <table class="bio-table">
+      <tr>
+        <td>2026 – Now</td>
+        <td><b>Research Scientist</b>, HCI Research Group, NAVER AI Lab</td>
+      </tr>
+      <tr>
+        <td>2025</td>
+        <td><b>Postdoctoral Fellow</b>, Center for Multimedia Intelligence, Sungkyunkwan University</td>
+      </tr>
+      <tr>
+        <td>2025</td>
+        <td><b>Research Intern</b>, HCI Research Group, NAVER AI Lab</td>
+      </tr>
+      <tr>
+        <td>2020 – 2025</td>
+        <td><b>Ph.D.</b> in Applied Artificial Intelligence, Sungkyunkwan University</td>
+      </tr>
+      <tr>
+        <td>2017 – 2020</td>
+        <td><b>B.A.</b> in Media Technology and Robot Engineering, Hanyang University ERICA</td>
+      </tr>
+    </table>
   </div>
 </div>
 
-<!-- 하단: 1컬럼 (News, Publications) -->
 <div class="home-bottom">
+  <h2 class="section-title">About Me</h2>
+  <div class="home-intro">
+    <p>I am a Research Scientist at NAVER AI Lab at NAVER Corporation, working in the Human-Computer Interaction (HCI) Research Group led by <a href="https://younghokim.net/">Young-Ho Kim</a>.
+    I design <b>AI systems that understand people more fully</b>, especially those whose ways of expressing themselves fall outside what AI usually assumes. Currently, I work on AI systems that <b>support neurodiverse people</b> and embrace the many different ways human experience shows up.</p>
+
+    <p>I started out as a model builder. During my Ph.D., I developed AI systems that help art therapists assess drawings, where things too difficult to say often find their way out. The more models I built, the clearer it became that the hard part wasn't the model. It was the therapist who had to trust it, the client whose drawing it was reading, and everything that happened between them. That pulled me into HCI.</p>
+
+    <p>Most AI is built around a narrow idea of "the user," and when someone falls outside it, the person is expected to adapt, not the system. The question I keep returning to is: <b>how do we design AI that supports people in ways that actually matter to them?</b></p>
+  </div>
+
   <h2 class="section-title">News</h2>
   <table class="news-table">
     <tr>
-      <td>Jan 2026</td>
-      <td>Started a new position as Research Scientist at NAVER AI Lab! 🎉</td>
+      <td>Oct 2026</td>
+      <td>Honored to present our paper "BetaDAPR: An AI-based Expert Support System for Art Therapists with Qualitative and Quantitative Assistance" at ACM CSCW 2026 in Salt Lake City, Utah! 🎤</td>
     </tr>
     <tr>
-      <td>Jan 2026</td>
-      <td>My first CHI paper, "Autiverse: Eliciting Autistic Adolescents' Daily Narratives through AI-guided Multimodal Journaling," has been conditionally accepted to ACM CHI 2026! 🎊</td>
+      <td>Apr 2026</td>
+      <td>Presented my first CHI paper, "Autiverse: Eliciting Autistic Adolescents' Daily Narratives through AI-guided Multimodal Journaling," at ACM CHI 2026 in Barcelona, Spain! 🇪🇸</td>
     </tr>
     <tr>
-      <td>Nov 2025</td>
-      <td>Honored to present our paper "CheckDAPR: An MLLM-based Sketch Analysis System for Draw-A-Person-in-the-Rain Assessments" at ACM CIKM 2025 at COEX, Seoul! 🎤</td>
+      <td>Apr 2026</td>
+      <td>Our paper "BetaDAPR: An AI-based Expert Support System for Art Therapists with Qualitative and Quantitative Assistance" has been accepted to ACM CSCW 2026 (PACM HCI)! 🎊</td>
     </tr>
   </table>
   
   <h2 class="section-title">Selected Publications</h2>
   <p class="section-description">For a full list, please visit <a href="/publications/">Publications</a>.</p>
+  {% assign selected_pubs = site.publications | where: "selected", true | sort: "date" | reverse %}
+  {% for post in selected_pubs %}
+    {% include pub-item.html post=post %}
+  {% endfor %}
 </div>

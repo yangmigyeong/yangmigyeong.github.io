@@ -1,0 +1,42 @@
+{% assign post = include.post %}
+<div class="pub-item">
+  {% if post.thumbnail %}
+  <div class="pub-thumb">
+    <img src="{{ post.thumbnail }}" alt="" loading="lazy">
+  </div>
+  {% endif %}
+
+  <div class="pub-body">
+    <div class="pub-title">
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">{{ post.title }}</a>
+      {% else %}
+        {{ post.title }}
+      {% endif %}
+    </div>
+
+    {% if post.authors %}
+    <div class="pub-authors">{{ post.authors }}</div>
+    {% endif %}
+
+    <div class="pub-venue">{{ post.venue }}{% if post.note %} ({{ post.note }}){% endif %}{% if post.presented %}{% case post.presentation %}{% when 'poster' %}{% assign pres_icon = '🪧' %}{% assign pres_tip = 'Poster presented by ' %}{% when 'online' %}{% assign pres_icon = '🎥' %}{% assign pres_tip = 'Presented online by ' %}{% else %}{% assign pres_icon = '🎤' %}{% assign pres_tip = 'Presented by ' %}{% endcase %} · <span class="pub-presented" data-tooltip="{{ pres_tip }}{{ site.author.name }}">{{ pres_icon }} {{ post.presented }}</span>{% endif %}</div>
+
+    {% if post.award %}
+    <div class="pub-award"><i class="fas fa-award" aria-hidden="true"></i> {{ post.award }}</div>
+    {% endif %}
+
+    <div class="pub-links">
+      {% if post.doi %}<a href="{{ post.doi }}" class="doi">DOI</a>{% endif %}
+      {% if post.html %}<a href="{{ post.html }}" class="html">HTML</a>{% endif %}
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf">PDF</a>{% endif %}
+      {% if post.bibtex %}<a href="{{ post.bibtex }}" class="bibtex">BibTeX</a>{% endif %}
+      {% if post.arxiv %}<a href="{{ post.arxiv }}" class="arxiv">arXiv</a>{% endif %}
+      {% if post.github %}<a href="{{ post.github }}" class="github">GitHub</a>{% endif %}
+      {% if post.code %}<a href="{{ post.code }}" class="code">Code</a>{% endif %}
+      {% if post.website %}<a href="{{ post.website }}" class="web">Web</a>{% endif %}
+      {% if post.demo %}<a href="{{ post.demo }}" class="demo">Demo video</a>{% endif %}
+      {% if post.video %}<a href="{{ post.video }}" class="video">Talk video</a>{% endif %}
+      {% if post.slides %}<a href="{{ post.slides }}" class="slides">Slides</a>{% endif %}
+    </div>
+  </div>
+</div>

@@ -9,4 +9,7 @@ note: 'full paper'
 authors: '<strong>Migyeong Yang</strong>, Chaehee Park, Jiwon Kang, Jiwon Kim, Taeeun Kim, Hayeon Song, and Jinyoung Han'
 doi: 'https://dl.acm.org/doi/abs/10.1145/3711112'
 paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3711112'
+selected: true
+presented: 'Bergen, Norway'
+thumbnail: '/images/pubs/thumb/practicedapr.jpg'
 ---

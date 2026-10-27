@@ -1,0 +1,9 @@
+{% include base_path %}
+<div class="profile-card">
+  <img class="profile-card__photo" src="{{ base_path }}/images/{{ site.author.avatar }}" alt="Photo of {{ site.author.name }}">
+  <div class="profile-card__info">
+    <a class="profile-card__name" href="{{ base_path }}/">{{ site.author.name }}, PhD</a>
+    <p class="profile-card__role">Research Scientist at NAVER AI Lab</p>
+    {% include profile-links.html %}
+  </div>
+</div>

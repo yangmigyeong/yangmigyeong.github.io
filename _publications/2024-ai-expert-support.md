@@ -9,4 +9,5 @@ note: 'full paper'
 authors: 'Jiwon Kim*, Jiwon Kang*, <strong>Migyeong Yang</strong>*, Chaehee Park*, Taeeun Kim, Hayeon Song, Jinyoung Han'
 doi: 'https://dl.acm.org/doi/10.1145/3689649'
 paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3689649'
+thumbnail: '/images/pubs/thumb/ai-expert-support.jpg'
 ---

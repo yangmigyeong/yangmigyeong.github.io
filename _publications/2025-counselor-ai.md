@@ -9,4 +9,6 @@ note: 'full paper'
 authors: 'Hyungjung Lee, Jiyeon Lee, <strong>Migyeong Yang</strong>, Daeun Lee, Hayeon Song, Youjin Han, Jinyoung Han'
 doi: 'https://dl.acm.org/doi/full/10.1145/3708359.3712081'
 paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3708359.3712081'
+thumbnail: '/images/pubs/thumb/counselor-ai.jpg'
+thumbnail_position: 'top right'
 ---

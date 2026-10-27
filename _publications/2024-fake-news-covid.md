@@ -10,4 +10,6 @@ authors: '<strong>Migyeong Yang</strong>*, Chaewon Park*, Jiwon Kang, Daeun Lee,
 doi: 'https://dl.acm.org/doi/abs/10.1145/3589335.3651506'
 paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3589335.3651506'
 github: 'https://github.com/DSAIL-SKKU/Fighting_Against_FakeNews_on_Emerging_Crisis-WWW24'
+presented: 'Singapore'
+presentation: 'poster'
 ---

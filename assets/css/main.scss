@@ -48,3 +48,140 @@
 .greedy-nav .visible-links {
   margin-left: auto;
 }
+
+.greedy-nav .visible-links li:first-child {
+  font-weight: inherit;
+}
+
+body,
+.masthead__inner-wrap {
+  font-family: "Source Sans 3", $sans-serif;
+}
+
+.masthead__menu {
+  display: flex;
+  align-items: center;
+}
+
+.masthead__brand {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.masthead__brand-name {
+  font-weight: 700;
+  color: var(--global-text-color);
+}
+
+.masthead__brand-role {
+  font-size: 0.75em;
+  color: var(--global-text-color);
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .masthead__brand-role {
+    display: none;
+  }
+}
+
+/* Profile links (Home hero + sidebar profile card) */
+:root {
+  --profile-ink-light: #575757;
+  --profile-accent: #1e9da7;
+}
+
+html[data-theme="dark"] {
+  --profile-ink-light: #d9d9d9;
+  --profile-accent: #4fc3cc;
+}
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85em;
+}
+
+.profile-links li {
+  margin: 0;
+  color: var(--profile-ink-light);
+}
+
+.profile-links a {
+  color: var(--profile-ink-light);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.profile-links a:hover {
+  color: var(--profile-accent);
+}
+
+/* Sidebar profile card */
+.sidebar .profile-card {
+  padding-top: 1.5em;
+}
+
+.sidebar .profile-card__photo {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.profile-card__name {
+  display: block;
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: nowrap;
+  color: var(--global-text-color) !important;
+  text-decoration: none;
+}
+
+.sidebar p.profile-card__role {
+  margin: 2px 0 14px 0;
+  font-size: 0.75em;
+  white-space: nowrap;
+  color: var(--profile-ink-light);
+}
+
+.sidebar .profile-links {
+  font-size: 0.75em;
+}
+
+.sidebar .profile-links li {
+  font-size: inherit;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1023px) {
+  .sidebar .profile-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 0;
+  }
+
+  .sidebar .profile-card__photo {
+    width: 96px;
+    margin-bottom: 0;
+  }
+
+  .sidebar .profile-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+  }
+}

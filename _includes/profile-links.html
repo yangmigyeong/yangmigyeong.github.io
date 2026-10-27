@@ -1,0 +1,20 @@
+<ul class="profile-links">
+  <li><a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar ai-fw" aria-hidden="true"></i> Google Scholar</a></li>
+  <li><a href="{{ site.author.orcid }}"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i> ORCID</a></li>
+  <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+  <li><a href="#" class="copy-email" data-email="{{ site.author.email }}" title="Click to copy"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> <span class="copy-email-text">{{ site.author.email }}</span></a></li>
+</ul>
+<script>
+  document.querySelectorAll('.copy-email').forEach(function (btn) {
+    if (btn.dataset.bound) return;
+    btn.dataset.bound = 'true';
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var text = btn.querySelector('.copy-email-text');
+      navigator.clipboard.writeText(btn.dataset.email).then(function () {
+        text.textContent = 'Copied!';
+        setTimeout(function () { text.textContent = btn.dataset.email; }, 1500);
+      });
+    });
+  });
+</script>

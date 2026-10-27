@@ -10,4 +10,7 @@ authors: 'Jiwon Kang, Jiwon Kim, <strong>Migyeong Yang</strong>, Chaehee Park, T
 doi: 'https://dl.acm.org/doi/abs/10.1145/3589334.3648150'
 paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3589334.3648150'
 github: 'https://github.com/DSAIL-SKKU/SceneDAPR'
+presented: 'Singapore'
+video: 'https://www.youtube.com/watch?v=o_o3YYFKDyE'
+thumbnail: '/images/pubs/thumb/scenedapr.jpg'
 ---

@@ -1,55 +1,111 @@
 /* About page (home page) styling */
 
-.home-top {
+:root {
+  --home-ink: #252525;
+  --home-ink-light: #575757;
+  --home-accent: #1e9da7;
+  --home-rule: #eaeaea;
+}
+
+html[data-theme="dark"] {
+  --home-ink: #ffffff;
+  --home-ink-light: #d9d9d9;
+  --home-accent: #4fc3cc;
+  --home-rule: #5e5e5e;
+}
+
+/* 상단 hero */
+.home-hero {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
-  gap: 30px;
+  gap: 36px;
   max-width: 1100px;
-  margin: 0 auto 40px auto;
+  margin: 24px auto 16px auto;
 }
 
-.home-sidebar {
+.hero-photo {
   flex-shrink: 0;
-  width: 260px;
+  width: 200px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 12px;
 }
 
-.home-sidebar .author__avatar img {
-  max-width: 200px;
-  border-radius: 50%;
-}
-
-.home-sidebar .author__urls li {
-  font-size: 0.75em;
-  white-space: normal;
-}
-
-.home-intro {
+.hero-main {
   flex: 1;
+  min-width: 0;
 }
 
-.home-intro p {
-  font-size: 1em;
-  line-height: 1.75;
-  color: var(--global-text-color, #494e52);
-  margin-bottom: 1em;
+.hero-name {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--home-ink);
 }
 
-.home-intro a {
-  color: var(--global-link-color, #52adc8);
-  text-decoration: none;
+.hero-role {
+  margin: 4px 0 12px 0;
+  font-size: 1.05em;
+  color: var(--home-ink-light);
 }
 
-.home-intro a:hover {
-  text-decoration: underline;
+.hero-main .profile-links {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-bottom: 18px;
 }
 
-.about-title {
-  font-size: 1.8em;
-  font-weight: bold;
-  margin-top: 35px;
-  margin-bottom: 20px;
-  color: var(--global-text-color, #494e52);
+.hero-subtitle {
+  margin: 0 0 6px 0;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--home-accent);
+}
+
+.bio-table,
+.news-table {
+  display: table;
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-collapse: collapse;
+}
+
+.bio-table td,
+.news-table td {
+  padding: 4px 0;
+  vertical-align: top;
+  border: none;
+  background: transparent;
+  line-height: 1.5;
+  color: var(--home-ink);
+}
+
+.bio-table td {
+  font-size: 0.9em;
+}
+
+.bio-table td:first-child,
+.news-table td:first-child {
+  width: 110px;
+  padding-right: 16px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--home-ink-light);
+}
+
+.news-table td {
+  padding: 6px 0;
+  font-size: 1.05em;
+}
+
+.news-table td:first-child {
+  font-weight: 600;
 }
 
 /* 아래 1컬럼 영역 */
@@ -59,57 +115,55 @@
 }
 
 .section-title {
-  font-size: 1.5em;
-  font-weight: normal;
-  margin-top: 35px;
-  margin-bottom: 20px;
-  color: var(--global-text-color, #494e52);
+  font-size: 1.35em;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--home-rule);
+  color: var(--home-ink);
 }
 
-.news-table {
-  width: 100%;
-  border: none;
+.home-intro p {
+  font-size: 1em;
+  line-height: 1.7;
+  color: var(--home-ink);
+  margin-bottom: 0.8em;
 }
 
-.news-table td {
-  padding: 12px 0;
-  vertical-align: top;
-  border: none;
-  font-size: 1.1em;
-  line-height: 1.75;
-  background: transparent;
-}
-
-.news-table td:first-child {
-  font-weight: 600;
-  width: 120px;
-  color: var(--global-text-color, #494e52);
-}
-
-.news-table td:last-child {
-  color: var(--global-text-color, #494e52);
-}
-
-.section-description {
-  color: var(--global-text-color, #494e52);
-}
-
-.section-description a {
-  color: var(--global-link-color, #52adc8);
+.home-intro a,
+.section-description a,
+.news-table a {
+  color: var(--home-accent);
   text-decoration: none;
 }
 
-.section-description a:hover {
+.home-intro a:hover,
+.section-description a:hover,
+.news-table a:hover {
   text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.section-description {
+  margin-bottom: 18px;
+  font-size: 0.9em;
+  color: var(--home-ink-light);
 }
 
 @media (max-width: 768px) {
-  .home-top {
+  .home-hero {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
-  
-  .home-sidebar {
-    width: 100%;
+
+  .hero-photo {
+    width: 160px;
+  }
+
+  .bio-table td:first-child,
+  .news-table td:first-child {
+    width: 84px;
+    padding-right: 10px;
   }
 }

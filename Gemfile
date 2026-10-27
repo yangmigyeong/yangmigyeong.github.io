@@ -11,3 +11,9 @@ end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+
+# Removed from Ruby's default gems in 3.4+; needed for local `jekyll serve`
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+gem 'logger'

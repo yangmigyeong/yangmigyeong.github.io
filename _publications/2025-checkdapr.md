@@ -10,4 +10,7 @@ authors: '<strong>Migyeong Yang</strong>*, Chaehee Park*, Taeeun Kim, Hayeon Son
 doi: 'https://dl.acm.org/doi/abs/10.1145/3746252.3761571'
 paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3746252.3761571'
 github: 'https://github.com/DSAIL-SKKU/CheckDAPR'
+selected: true
+presented: 'Seoul, Korea'
+thumbnail: '/images/pubs/thumb/checkdapr.jpg'
 ---
