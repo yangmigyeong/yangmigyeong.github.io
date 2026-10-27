@@ -7,8 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/about.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/publications.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/about.css?v={{ site.time | date: '%s' }}">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/publications.css?v={{ site.time | date: '%s' }}">
 
 <!-- 상단: hero (사진 | 이름, 링크, Short bio) -->
 <div class="home-hero">

@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-<link rel="stylesheet" href="/assets/css/publications.css">
+<link rel="stylesheet" href="/assets/css/publications.css?v={{ site.time | date: '%s' }}">
 
 <div class="pub-page">
 {% assign publications_by_year = site.publications | group_by: "year" | sort: "name" | reverse %}
